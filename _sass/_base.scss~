@@ -129,7 +129,7 @@ pre,
 code {
     font-size: 15px;
     border: 1px solid $grey-color-light;
-    border-radius: 6px;
+    border-radius: 3px;
     background-color: #f9f9fb;
 }
 
