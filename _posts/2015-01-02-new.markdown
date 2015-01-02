@@ -34,7 +34,7 @@ int main() {
 
 Try NASM
 
-``nasm
+```nasm
 Dump of assembler code for function main:
    0x080483c4 <+0>:	push   ebp
    0x080483c5 <+1>:	mov    ebp,esp
