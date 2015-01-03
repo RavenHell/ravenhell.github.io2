@@ -1,68 +1,98 @@
 /**
  * Syntax highlighting styles
  */
-.highlight {
-    background: #fff;
-    @extend %vertical-rhythm;
-
-    .c     { color: #8e908c; font-style: italic } // Comment
-    .err   { color: #c82829; background-color: #e3d2d2 } // Error
-    .k     { font-weight: regular } // Keyword
-    .o     { font-weight: regular } // Operator
-    .cm    { color: #8e908c; font-style: italic } // Comment.Multiline
-    .cp    { color: #8e908c; font-weight: regular } // Comment.Preproc
-    .c1    { color: #8e908c; font-style: italic } // Comment.Single
-    .cs    { color: #8e908c; font-weight: regular; font-style: italic } // Comment.Special
-    .gd    { color: #c82829; background-color: #fdd } // Generic.Deleted
-    .gd .x { color: #c82829; background-color: #faa } // Generic.Deleted.Specific
-    .ge    { font-style: italic } // Generic.Emph
-    .gr    { color: #a00 } // Generic.Error
-    .gh    { color: #4d4d4c } // Generic.Heading
-    .gi    { color: #46ad55; background-color: #dfd } // Generic.Inserted
-    .gi .x { color: #46ad55; background-color: #afa } // Generic.Inserted.Specific
-    .go    { color: #888 } // Generic.Output
-    .gp    { color: #8e908c } // Generic.Prompt
-    .gs    { font-weight: bold } // Generic.Strong
-    .gu    { color: #51bac8 } // Generic.Subheading
-    .gt    { color: #a00 } // Generic.Traceback
-    .kc    { color: #b168cd; font-weight: regular } // Keyword.Constant
-    .kd    { color: #b168cd; font-weight: regular } // Keyword.Declaration
-    .kp    { color: #b168cd; font-weight: regular } // Keyword.Pseudo
-    .kr    { color: #b168cd; font-weight: regular } // Keyword.Reserved
-    .kt    { color: #deb328; font-weight: regular } // Keyword.Type
-    .m     { color: #d35c5c } // Literal.Number
-    .s     { color: #46ad55 } // Literal.String
-    .na    { color: #256fb9 } // Name.Attribute
-    .nb    { color: #4d4d4c } // Name.Builtin
-    .nc    { color: #deb328; font-weight: regular } // Name.Class
-    .no    { color: #d35c5c } // Name.Constant
-    .nd    { color: #51bac8 }
-    .ni    { color: #4d4d4c } // Name.Entity
-    .ne    { color: #c82829; font-weight: regular } // Name.Exception
-    .nf    { color: #256fb9; font-weight: regular } // Name.Function
-    .nn    { color: #deb328 } // Name.Namespace
-    .nt    { color: #51bac8 } // Name.Tag
-    .nv    { color: #c82829 } // Name.Variable
-    .ow    { color: #51bac8; font-weight: regular } // Operator.Word
-    .w     { color: #4d4d4c } // Text.Whitespace
-    .mf    { color: #d35c5c } // Literal.Number.Float
-    .mh    { color: #d35c5c } // Literal.Number.Hex
-    .mi    { color: #d35c5c } // Literal.Number.Integer
-    .mo    { color: #d35c5c } // Literal.Number.Oct
-    .sb    { color: #46ad55 } // Literal.String.Backtick
-    .sc    { color: #4d4d4c } // Literal.String.Char
-    .sd    { color: #8e908c } // Literal.String.Doc
-    .s2    { color: #46ad55 } // Literal.String.Double
-    .se    { color: #d35c5c } // Literal.String.Escape
-    .sh    { color: #46ad55 } // Literal.String.Heredoc
-    .si    { color: #d35c5c } // Literal.String.Interpol
-    .sx    { color: #46ad55 } // Literal.String.Other
-    .sr    { color: #46ad55 } // Literal.String.Regex
-    .s1    { color: #46ad55 } // Literal.String.Single
-    .ss    { color: #46ad55 } // Literal.String.Symbol
-    .bp    { color: #4d4d4c } // Name.Builtin.Pseudo
-    .vc    { color: #c82829 } // Name.Variable.Class
-    .vg    { color: #c82829 } // Name.Variable.Global
-    .vi    { color: #c82829 } // Name.Variable.Instance
-    .il    { color: #d35c5c } // Literal.Number.Integer.Long
-}
+.highlight{background:#fff}.highlight
+.c{color:#998;font-style:italic}.highlight
+.err{color:#a61717;background-color:#e3d2d2}.highlight
+.k,.highlight
+.o{font-weight:700}.highlight
+.cm{color:#998;font-style:italic}.highlight
+.cp{color:#999;font-weight:700}.highlight
+.c1{color:#998;font-style:italic}.highlight
+.cs{color:#999;font-weight:700;font-style:italic}.highlight
+.gd{color:#000;background-color:#fdd}.highlight
+.gd
+.x{color:#000;background-color:#faa}.highlight.ge{font-style:italic}.highlight
+.gr{color:#a00}.highlight
+.gh{color:#999}.highlight
+.gi{color:#000;background-color:#dfd}.highlight
+.gi
+.x{color:#000;background-color:#afa}.highlight
+.go{color:#888}.highlight
+.gp{color:#555}.highlight
+.gs{font-weight:700}.highlight
+.gu{color:purple;font-weight:700}.highlight
+.gt{color:#a00}.highlight
+.kc,.highlight
+.kd,.highlight
+.kn,.highlight
+.kp,.highlight
+.kr{font-weight:700}.highlight
+.kt{color:#458;font-weight:700}.highlight
+.m{color:#099}.highlight
+.s{color:#d14}.highlight
+.n{color:#333}.highlight
+.na{color:teal}.highlight
+.nb{color:#0086b3}.highlight
+.nc{color:#458;font-weight:700}.highlight
+.no{color:teal}.highlight
+.ni{color:purple}.highlight
+.ne,.highlight
+.nf{color:#900;font-weight:700}.highlight
+.nn{color:#555}.highlight
+.nt{color:navy}.highlight
+.nv{color:teal}.highlight
+.ow{font-weight:700}.highlight
+.w{color:#bbb}.highlight
+.mf,.highlight
+.mh,.highlight
+.mi,.highlight
+.mo{color:#099}.highlight
+.sb,.highlight
+.sc,.highlight
+.sd,.highlight
+.s2,.highlight
+.se,.highlight
+.sh,.highlight
+.si,.highlight
+.sx{color:#d14}.highlight
+.sr{color:#009926}.highlight
+.s1{color:#d14}.highlight
+.ss{color:#990073}.highlight
+.bp{color:#999}.highlight
+.vc,.highlight
+.vg,.highlight
+.vi{color:teal}.highlight
+.il{color:#099}.highlight
+.gc{color:#999;background-color:#EAF2F5}.type-csharp
+.highlight
+.k,.type-csharp
+.highlight
+.kt{color:blue}.type-csharp
+.highlight
+.nf{color:#000;font-weight:400}.type-csharp
+.highlight
+.nc{color:#2b91af}.type-csharp
+.highlight
+.nn{color:#000}.type-csharp
+.highlight
+.s,.type-csharp
+.highlight
+.sc{color:#a31515}.type-csharp
+.highlight
+.k,.type-csharp
+.highlight
+.kt{color:#00F}.type-csharp
+.highlight
+.nf{color:#000;font-weight:normal}.type-csharp
+.highlight
+.nc{color:#2B91AF}.type-csharp
+.highlight
+.nn{color:#000}.type-csharp
+.highlight
+.s,.type-csharp
+.highlight
+.sc{color:#A31515}body.dark
+#wrapper{background:transparent
+!important;box-shadow:none
+!important}
